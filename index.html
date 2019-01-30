@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="phone.css">
+		<title>Phone Application</title>
+	</head>
+	<body>
+		<div class = "tab" id="tab_bar">
+			<button class = "tablinks" id="Dialer">Dialer</button>
+			<button class = "tablinks" id="ContactList">Contact List</button>
+			<button class = "tablinks" id="AddContact">Add Contact</button>
+		</div>
+		<div id="content">
+			<div id="DialerContent">
+				<h3>Dialer</h3>
+				<form>
+					<input id="dialer">
+				</form>
+				<div class="numbers" id = "buttonnumbers">
+						<button class = "number" id="1">1</button>
+						<button class = "number" id="2">2</button>
+						<button class = "number" id="3">3</button>
+				
+						<button class = "number" id="4">4</button>
+						<button class = "number" id="5">5</button>
+						<button class = "number" id="6">6</button>
+			
+						<button class = "number" id="7">7</button>
+						<button class = "number" id="8">8</button>
+						<button class = "number" id="9">9</button>
+				
+						<button class = "number" id="*">*</button>
+						<button class = "number" id="0">0</button>
+						<button class = "number" id="#">#</button>
+				
+				</div>
+
+				<div class = "otherbuttons" id = "otherbuttons">
+					<button class = "number" id="Dial">Dial</button>
+
+					<button class = "number" id="Clear">Clear</button>
+				</div>
+
+			</div>
+
+			<div id="ContactListContent">
+				<h3>Contact List</h3>
+				<div class="text-box" id="contact1">
+					<p>Vinitha Gadiraju</p>
+					<p>Gabriella Johnson</p>
+					<p>Kyle Reinholt</p>
+				</div>
+			</div>
+			<div id="AddContactContent">
+				<h3>Add Contact</h3>
+				<form>
+					<label for="name">Name</label>
+					<input id="name" placeholder="Jane Smith">
+				</form>
+				<form>
+					<label for="pnumber">Phone Number</label>
+					<input id="pnumber" placeholder="123-456-7890">
+				</form>
+				<form>
+					<label for="email">Email</label>
+					<input id="email" placeholder="jane.smith@gmail.com">
+				</form>
+				<button id="Add Contact">Add Contact</button>
+				<button id="Clear Form">Clear Form</button>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
+	</body>
+</html>

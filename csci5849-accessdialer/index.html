@@ -1,0 +1,151 @@
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="phone.css">
+		<title>Phone Application</title>
+	</head>
+	<body>
+		<div class = "tab" id="tab_bar" tabindex="0" role="navigation">
+			<button class = "tablinks" id="Dialer" tabindex="-1" accesskey="d"><h3>Dialer</h3></button>
+		</div>
+		<div class = "tab" id="tab_bar" tabindex="0" role="navigation">
+			<button class = "tablinks" id="ContactList" tabindex="-1" accesskey="l"><h3>Contact List</h3></button>
+		</div>
+		<div class = "tab" id="tab_bar" tabindex="0" role="navigation">
+			<button class = "tablinks" id="AddContact" tabindex="-1" accesskey="a"><h3>Add Contact</h3></button>
+		</div>
+		<div class = "tab" id="tab_bar" tabindex="0" role="navigation">
+			<button class = "tablinks" id="Help" tabindex="-1" accesskey="h"><h3>Help</h3></button>
+		</div>
+		  <div id="content" role="main">
+		  <div id="DialerContent" aria-live="polite">
+		      <h1>Dialer</h1>
+			  <form>
+				  <input id="number_input"/>
+			  </form>
+			  <div id="dialer_pad">
+				  <div>
+					  <button id="dialer1" accesskey="1">1</button>
+					  <button id="dialer2" accesskey="2">2</button>
+					  <button id="dialer3" accesskey="3">3</button>
+				  </div>
+				  <div>
+					  <button id="dialer4" accesskey="4">4</button>
+					  <button id="dialer5" accesskey="5">5</button>
+					  <button id="dialer6" accesskey="6">6</button>
+				  </div>
+				  <div>
+					  <button id="dialer7" accesskey="7">7</button>
+					  <button id="dialer8" accesskey="8">8</button>
+					  <button id="dialer9" accesskey="9">9</button>
+				  </div>
+				  <div>
+					  <button id="dialer_star" accesskey="s">*</button>
+					  <button id="dialer0" accesskey="0">0</button>
+					  <button id="dialer_octothorpe" accesskey="p">#</button>
+				  </div>
+			  </div>
+			  <div id="dialer_controls">
+				  <button id="button_dial" accesskey="e">Dial</button>
+				  <button id="button_dialer_clear" accesskey="c">Clear</button>
+			  </div>
+		  </div>
+	
+			<div id="ContactListContent" aria-live="polite">
+				<table>
+					<caption>Contact List</caption>
+
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Phone Number</th>
+						<th scope="col">Email</th>
+						<th scope="col">Contact Picture</th>
+					</tr>
+
+					<tr>
+					<th scope="row">Spiderman</th>
+					<td>503-333-1334</td>
+					<td>spideysenses@hotmail.com</td>
+					<td><img src="spiderman.jpg" alt="" border=3 height=240 width=320 alt="Spiderman" longdesc="This is an image of Miles Morales as Spiderman from the film Spiderman into the Spiderverse"></img></td>
+					</tr>
+
+					<tr>
+					<th scope="row">Batman</th>
+					<td>503-467-1599</td>
+					<td>batcavez@yahoo.com</td>
+					<td><img src="batman.jpg" alt="" border=3 height=240 width=320 alt="Batman" longdesc="This is an image of batman depicted in lego form from the Lego Batman film"></img></td>
+					</tr>
+
+					<tr>
+					<th scope="row">Ironman</th>
+					<td>503-533-7016</td>
+					<td>starksays@gmail.com</td>
+					<td><img src="ironman.jpg" alt="" border=3 height=240 width=320 alt="Ironman" longdesc="This is an image of Tony Stark in the Iron man costume played by actor Robert Downey Junior"></img></td>
+					</tr>
+
+				</table>
+			</div>
+
+			<div id="AddContactContent" aria-live="polite">
+				<h1>Add Contact</h1>
+				<form>
+					<label for="name"><h2>Name</h2></label>
+					<input id="name" placeholder="Jane Smith">
+				</form>
+				<form>
+					<label for="pnumber"><h2>Phone Number</h2></label>
+					<input id="pnumber" placeholder="123-456-7890">
+				</form>
+				<form>
+					<label for="email"><h2>Email</h2></label>
+					<input id="email" placeholder="jane.smith@gmail.com">
+				</form>
+				<div id="contact_buttons">
+					<div class="addcontact" id = "addcontact" tabindex="0">
+						<button id="Add Contact" tabindex="-1" accesskey="n"><h3>Add Contact</h3></button>
+					</div>
+					<div class="clearform" id = "clearform" tabindex="0">
+						<button id="Clear Form" tabindex="-1" accesskey="f"><h3>Clear Form</h3></button>
+					</div>
+				</div>
+			</div>
+
+			<div id="HelpContent" aria-live="polite">
+				<h1>Help</h1>
+					<p>This application includes a dialer, a contact list, an add contact form, and a help tab. The website includes the following accessibility features:</p>
+
+					<ul>
+						<li>Tabbing through all buttons and forms</li>
+						<li>The application has keyboard shortcuts to navigate between tabs and for the buttons on the dialer. Depending on your system, the keyboard shortcut method will be different. 
+						<p>
+							If you are using a Mac on chrome, firefox, or safari, hold down the control key and then the option key before pressing the keyboard shortcut.
+						</p>
+						<p>
+							If you are using Windows or Linux with a chrome browser, hold down the alt key before pressing the keyboard shortcut. 
+						</p>
+						<p>
+							If you are using Windows or Linux with firefox, hold down the alt key and then the shift key before pressing the keyboard shortcut. 
+						</p>
+						<p>
+							If you are using Windows on Safari, hold down the alt key before pressing the keyboard shortcut.
+						</p>
+						<p>
+							The following keyboard shortcuts are to navigate between tabs: press (d) for Dialer, (l) for Contact List, (a) for Add Contact, and (h) for Help. 
+						</p>
+						</li>
+						<li>
+						In the dialer, each number on the keyboard corresponds to the button on the interface. For example, pressing 1 on the keyboard will add 1 to the phone number in the input form. For the pound sign, press (p) and for the star press (s). The numbers included on the dialer are 0 through 9. To clear the form, press (c). To dial, press (e).</li>
+						<li>In the add contact page, press (n) to add contact and (f) to clear the form. Again, use the keyboard shortcut method outlined above depending on your browser and operating system.</li>
+						<li>The contact page is formatted as an accessible table with the columns name, phone number, email address, and contact image. Each contact image includes a short caption and a longer description.</li>
+						<li>The application has ARIA landmark roles and regions.</li>
+					</ul>
+
+					<h2>Sources for the images</h2>
+					<p>Spiderman: <a href="https://www.metacritic.com/movie/spider-man-into-the-spider-verse" target="_blank">https://www.metacritic.com/movie/spider-man-into-the-spider-verse</a></p>
+					<p>Batman: <a href="https://www.metacritic.com/movie/the-lego-batman-movie" target="_blank">https://www.metacritic.com/movie/the-lego-batman-movie</a></p>
+					<p>Ironman: <a href="https://www.businessinsider.com/this-is-how-much-it-costs-to-be-iron-man-2012-7" target="_blank">https://www.businessinsider.com/this-is-how-much-it-costs-to-be-iron-man-2012-7</a></p>
+		</div>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
+	</body>
+</html>

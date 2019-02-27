@@ -21,3 +21,11 @@ function pantsFunction() {
 function boneFunction() {
 	puppy_img.src = "puppy_bone.jpg"
 }
+
+$("#button").on("click", function() {
+    $("body").scrollTop(0);
+});
+
+$("#clothing_buttons").on("click", function() {
+    $("body").scrollTop(0);
+});

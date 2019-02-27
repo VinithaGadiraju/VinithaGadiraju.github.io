@@ -15,12 +15,13 @@ body {
   text-align: center;
 }
 
-@media (min-width: 300px) {
-	#clothing_buttons { margin-left: 140px; display: block;}
-	#puppy { margin-left: 140px; display: block;}
+img {
+	max-width: 100%;
+	min-width: 30px;
+	height: auto;
 }
 
-@media (max-width: 150px) {
-	#clothing_buttons { margin-left: 140px; display: block !important; margin-top: 20px;}
-	#puppy { margin-left: 140px; display: block;}
+.button {
+	min-width: 100px;
+ 	min-height: 30px;
 }

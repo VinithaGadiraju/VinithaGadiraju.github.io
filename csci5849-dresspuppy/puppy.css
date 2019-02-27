@@ -16,9 +16,11 @@ body {
 }
 
 @media (min-width: 300px) {
-	#clothing_buttons { margin-left: 140px; display: block;}
+	.clothing_buttons { margin-left: 140px; display: block;}
+	.puppy { margin-left: 140px; display: block;}
 }
 
 @media (max-width: 150px) {
-	#clothing_buttons { margin-left: 140px; display: block !important; margin-top: 20px;}
+	.clothing_buttons { margin-left: 140px; display: block !important; margin-top: 20px;}
+	.puppy { margin-left: 140px; display: block;}
 }

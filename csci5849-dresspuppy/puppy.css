@@ -15,7 +15,10 @@ body {
   text-align: center;
 }
 
-img {
-  width: 100%;
-  height: auto;
+@media (min-width: 300px) {
+	#clothing_buttons { margin-left: 140px; display: block;}
+}
+
+@media (max-width: 150px) {
+	#clothing_buttons { margin-left: 140px; display: block !important; margin-top: 20px;}
 }

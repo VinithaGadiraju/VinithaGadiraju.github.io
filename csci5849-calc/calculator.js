@@ -29,8 +29,6 @@ function getSelectedItem() {
 // if no button is currently selected, such as when the page loads, this will select the first
 // item in buttonOrder (which is the 7 button)
 // selectNext: go to the right, wrapping around to the next row
-// selectPrevious: go to the left, wrapping around to the previous row
-// selectUp: select the item above
 // selectDown: select the item below
 
 function selectNext() {
@@ -40,30 +38,6 @@ function selectNext() {
 	} else {
 		index = buttonOrder.indexOf(selected);
 		index = (index + 1) % buttonOrder.length;
-		selectItem(buttonOrder[index])
-	}
-}
-
-function selectPrevious() {
-	selected = getSelectedItem()
-	if (selected == null) {
-		selectItem(buttonOrder[0]);
-	} else {
-		index = buttonOrder.indexOf(selected);
-		index = (index - 1);
-		if (index < 0) index = buttonOrder.length + index
-		selectItem(buttonOrder[index])
-	}	
-}
-
-function selectUp() {
-	selected = getSelectedItem()
-	if (selected == null) {
-		selectItem(buttonOrder[0]);
-	} else {
-		index = buttonOrder.indexOf(selected);
-		index = (index - 4);
-		if (index < 0) index = buttonOrder.length + index
 		selectItem(buttonOrder[index])
 	}
 }
